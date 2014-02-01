@@ -1,0 +1,21 @@
+# markdown lib
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+# which type of links
+permalink: pretty
+
+# source code
+pygments: true
+
+# encoding
+encoding: UTF-8
+
+# this doesn't work on github
+lsi: false
+
+exclude:
+- _config.yml
+- .gitignore
+- .rcs
