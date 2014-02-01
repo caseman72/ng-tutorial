@@ -18,4 +18,10 @@ lsi: false
 exclude:
 - _config.yml
 - .gitignore
+- Gruntfile.js
+- assets.xml
+- bower.json
+- package.json
 - .rcs
+- bower_components
+- node_modules
