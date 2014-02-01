@@ -7,6 +7,19 @@ desc: Home Description
 	<b>HERE</b>
 </div>
 
-{% highlight bash %}
-mate /Applications/RubyMine\ 1.0.5.app/Contents/Info.plist
+{% highlight javascript %}
+	js_assets: {
+		options: {
+			banner: '"use strict";' + "\n",
+			process: function(src, filepath) {
+				return "/* " + filepath.replace(/^.*?\/js\//, "/js/") + " */\n" +
+					src.
+						replace(/^\s*\/\*[\s\S]*?\*\/\s*/g, "").
+						replace(/(^|\n)\/\/[#@] sourceMappingURL=.*?(\n|$)/g, "").
+						replace(/(^|\n)[ \t]*(?:'use strict'|"use strict");?\s*/g, "$1");
+			}
+		},
+		files: {
+		}
+	}
 {% endhighlight %}
