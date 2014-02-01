@@ -5,15 +5,13 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="Casey Manion"/>
 	<meta name="description" content="{{ page.desc }}"/>
-	<link rel="stylesheet" href="/css/ng-style.css?v=20130721" type="text/css"/>
+	<link rel="stylesheet" href="/assets/ng-style.css?v={{ site.time | date: '%Y%m%d%h%i%s' }}" type="text/css"/>
+	<script src="/assets/ng-head.min.js={{ site.time | date: '%Y%m%d%h%i%s' }}" type="text/javascript"></script>
 </head>
 <body>
 <div class="site">
 
 <div class="header">
-	{{ site.date }}
-<br/>
-	{{ site.time }}
 </div>
 
 <div id="content">
@@ -24,5 +22,6 @@
 </div>
 
 </div>
+<script src="/assets/ng-app.js={{ site.time | date: '%Y%m%d%h%i%s' }}" type="text/javascript"></script>
 </body>
 </html>
