@@ -12,6 +12,11 @@ pygments: true
 # encoding
 encoding: UTF-8
 
+# default
+date_format: "%Y%m%d%H%I%S"
+
+github_repo: "ng-tutorial"
+
 # this doesn't work on github
 lsi: false
 
