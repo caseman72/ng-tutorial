@@ -26,6 +26,7 @@
 					<parameters>
 						<link file="bower_components/bootstrap/dist/css/bootstrap.css"/>
 						<link file="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+						<link file="bower_components/pygments-css/github.css"/>
 						<link file="public/css/app.css"/>
 					</parameters>
 				</module>

@@ -5,8 +5,8 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="Casey Manion"/>
 	<meta name="description" content="{{ page.desc }}"/>
-	<link rel="stylesheet" href="/{{ site.repo }}/assets/ng-style.css?v={{ site.time | date: site.date_format }}" type="text/css"/>
-	<script src="/{{ site.repo }}/assets/ng-head.min.js={{ site.time | date: site.date_format }}" type="text/javascript"></script>
+	<link rel="stylesheet" href="{{ site.prefix }}/assets/ng-style.css?v={{ site.time | date: site.date_format }}" type="text/css"/>
+	<script src="{{ site.prefix }}/assets/ng-head.min.js?v={{ site.time | date: site.date_format }}" type="text/javascript"></script>
 </head>
 <body>
 <div class="site">
@@ -22,6 +22,6 @@
 </div>
 
 </div>
-<script src="/{{ site.repo }}/assets/ng-app.js={{ site.time | date: site.date_format }}" type="text/javascript"></script>
+<script src="{{ site.prefix }}/assets/ng-app.js?v={{ site.time | date: site.date_format }}" type="text/javascript"></script>
 </body>
 </html>

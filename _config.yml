@@ -15,7 +15,7 @@ encoding: UTF-8
 # default
 date_format: "%Y%m%d%H%I%S"
 
-repo: "ng-tutorial"
+prefix: "/ng-tutorial"
 
 # this doesn't work on github
 lsi: false
