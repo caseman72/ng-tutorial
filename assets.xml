@@ -15,7 +15,7 @@
 			<modules>
 				<module name="site" controller="system" action="jspackage">
 					<parameters>
-						<script file="public/js/app.js"/>
+						<script file="js/app.js"/>
 					</parameters>
 				</module>
 			</modules>
@@ -27,7 +27,7 @@
 						<link file="bower_components/bootstrap/dist/css/bootstrap.css"/>
 						<link file="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
 						<link file="bower_components/pygments-css/github.css"/>
-						<link file="public/css/app.css"/>
+						<link file="css/app.css"/>
 					</parameters>
 				</module>
 			</modules>

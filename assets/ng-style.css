@@ -1431,3 +1431,5 @@ th.visible-print,td.visible-print{display:table-cell!important}
 .vg{color:teal}
 .vi{color:teal}
 .il{color:#099}
+/* /css/app.css */
+.highlight pre{tab-size:2}
