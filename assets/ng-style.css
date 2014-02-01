@@ -1432,4 +1432,4 @@ th.visible-print,td.visible-print{display:table-cell!important}
 .vi{color:teal}
 .il{color:#099}
 /* /css/app.css */
-.highlight pre,.highlight pre code{tab-size:2}
+.highlight pre,.highlight pre code{tab-size:2;-moz-tab-size:2}

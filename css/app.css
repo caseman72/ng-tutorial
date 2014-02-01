@@ -1,3 +1,4 @@
 .highlight pre, .highlight pre code {
 	tab-size: 2;
+	-moz-tab-size: 2;
 }
