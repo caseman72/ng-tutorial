@@ -19,7 +19,7 @@ intense_debate: "5979410a38aa7bdfd921ff5a921f53b5"
 
 prefix: "/ng-tutorial"
 
-permalink: /ex/:day/
+permalink: /:title/
 
 ng:
   open: "{{ '{{ "
