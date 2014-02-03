@@ -8,6 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="{{ site.prefix }}/assets/ng-style.css?v={{ site.time | date: site.date_format }}" type="text/css"/>
 	<script src="{{ site.prefix }}/assets/ng-head.min.js?v={{ site.time | date: site.date_format }}" type="text/javascript"></script>
+	<script>
+		angular.site = {
+			prefix: "{{ site.prefix }}"
+		};
+	</script>
 </head>
 <body>
 <div class="site">

@@ -4,7 +4,7 @@
 		function($scope, $http, $timeout) {
 			$scope.seahawks = ["loading"];
 			$http.
-				get("/ajax/seahawks.json").
+				get("{prefix}/ajax/seahawks.json".format({prefix: ng.site.prefix})).
 				then(function(response) {
 					$timeout(function() {
 						$scope.seahawks = response.data || ["error"];

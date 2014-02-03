@@ -3,31 +3,10 @@ layout: default
 title: Home Page
 desc: Home Description
 ---
-<div id="page-content">
-	<b>HERE</b>
-</div>
+# h1 here
 
-{% highlight javascript %}
-	js_assets: {
-		options: {
-			banner: '"use strict";' + "\n",
-			process: function(src, filepath) {
-				return "/* " + filepath.replace(/^.*?\/js\//, "/js/") + " */\n" +
-					src.
-						replace(/^\s*\/\*[\s\S]*?\*\/\s*/g, "").
-						replace(/(^|\n)\/\/[#@] sourceMappingURL=.*?(\n|$)/g, "").
-						replace(/(^|\n)[ \t]*(?:'use strict'|"use strict");?\s*/g, "$1");
-			}
-		},
-		files: {
-		}
-	}
+{% highlight js tabsize=2 %}
 {% endhighlight %}
-
-<b>
-{{ site.prefix }}
-{{ site.port }}
-</b>
 
 <!-- TODO: move to an include -->
 <div id="wrapper" style="margin: 20px;">
