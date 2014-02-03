@@ -47,4 +47,31 @@
 					});
 			}
 		]);
+
+	// next/prev buttons ...
+	ng.element(function() {
+		var re_post = /\/([0-9]{2,})\/$/;
+		var path = "{0}".format(window.location.href).split(/[?#]/)[0]
+		var parts = re_post.exec(path);
+		if (parts) {
+			var current = parseInt(parts.pop(), 10);
+			var $prev = ng.element("a[href='#prev']");
+			if  (current <= 1) {
+				$prev.addClass("disabled");
+			}
+			else {
+				var prev = "0{0}".format(current-1).slice(-2);
+				$prev.attr("href", path.replace(re_post, "/{0}/".format(prev)));
+			}
+
+			var $next = ng.element("a[href='#next']");
+			if (current >= ng.site.posts) {
+				$next.addClass("disabled");
+			}
+			else {
+				var next = "0{0}".format(current+1).slice(-2);
+				$next.attr("href", path.replace(re_post, "/{0}/".format(next)));
+			}
+		}
+	});
 })(window.angular);

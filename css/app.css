@@ -2,6 +2,18 @@
 	tab-size: 2;
 	-moz-tab-size: 2;
 }
+.site {
+	padding: 0 !important;
+	overflow-x: hidden;
+}
+.float-left {
+	float:left;
+	margin-left: 15px;
+}
+.float-right {
+	float:right;
+	margin-right: 15px;
+}
 #content {
 	padding: 0 5px;
 }
