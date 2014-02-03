@@ -1433,7 +1433,7 @@ th.visible-print,td.visible-print{display:table-cell!important}
 .il{color:#099}
 /* /css/app.css */
 .highlight pre,.highlight pre code{tab-size:2;-moz-tab-size:2}
-.site{padding:0!important;overflow-x:hidden}
+.site{padding:0 0 5em!important;overflow-x:hidden}
 .float-left{float:left;margin-left:15px}
 .float-right{float:right;margin-right:15px}
 #content{padding:0 5px}

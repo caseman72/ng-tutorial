@@ -19,14 +19,8 @@
 <body>
 <div class="site">
 
-<div class="header">
-</div>
-
 <div id="content" ng-view{% if page.controller %} ng-controller="{{ page.controller }}"{% endif %}>
 {{ content }}</div>
-
-<div class="footer">
-</div>
 
 </div>
 <script src="{{ site.prefix }}/assets/ng-app.js?v={{ site.time | date: site.date_format }}" type="text/javascript"></script>
