@@ -27,6 +27,7 @@ module.exports = function(grunt) {
 	// load the plugins
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks("grunt-shell");
 
 	// watch config
 	grunt.initConfig({
@@ -64,19 +65,48 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		shell: {
+			jekyll_build: {
+				command: "jekyll build --config _config.yml,_config.dev.yml"
+			},
+			jekyll_serve: {
+				command: "jekyll serve --config _config.yml,_config.dev.yml"
+			}
+		},
 		watch: {
 			js_assets: {
 				files: js_watch_files,
-				tasks: ["concat:js_assets:files"],
+				tasks: [
+					"concat:js_assets:files"
+				],
 				options: {
 					spawn: false
 				}
 			},
 			css_assets: {
 				files: css_watch_files,
-				tasks: ["concat:css_assets:files"],
+				tasks: [
+					"concat:css_assets:files"
+				],
 				options: {
 					spawn: false
+				}
+			},
+			jekyll_assets: {
+				files: [
+					base_path + "/_includes/*.html",
+					base_path + "/_layouts/*.html",
+					base_path + "/_posts/*.md",
+					base_path + "/_config.dev.yml",
+					base_path + "/_config.yml",
+					base_path + "/index.html"
+				],
+				tasks: [
+					"shell:jekyll_serve"
+				],
+				options: {
+					interrupt: true,
+					atBegin: true
 				}
 			}
 		}

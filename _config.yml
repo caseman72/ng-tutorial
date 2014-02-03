@@ -21,6 +21,10 @@ prefix: "/ng-tutorial"
 
 permalink: /ex/:day/
 
+ng:
+  open: "{{ '{{ "
+  close: "'}} }}"
+
 # this doesn't work on github
 lsi: false
 
