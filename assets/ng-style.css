@@ -1433,4 +1433,9 @@ th.visible-print,td.visible-print{display:table-cell!important}
 .il{color:#099}
 /* /css/app.css */
 .highlight pre,.highlight pre code{tab-size:2;-moz-tab-size:2}
-#content{padding:25px}
+#content{padding:0 5px}
+.indent{margin-left:25px;margin-bottom:.75em}
+h1{display:block;margin:0 auto;font-size:24px;text-align:center}
+.br{height:.5em}
+.br:after{content:" "}
+.demo{background-color:#F5F5F5;border:1px solid #CCC;border-radius:4px;color:#333;display:block;font-size:13px;line-height:1.42857;margin:0 0 10px;padding:9.5px}

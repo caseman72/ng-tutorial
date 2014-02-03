@@ -77,34 +77,38 @@ module.exports = function(grunt) {
 			js_assets: {
 				files: js_watch_files,
 				tasks: [
-					"concat:js_assets:files"
+					"concat:js_assets:files",
+					"shell:jekyll_serve"
 				],
 				options: {
-					spawn: false
+					spawn: false,
 				}
 			},
 			css_assets: {
 				files: css_watch_files,
 				tasks: [
-					"concat:css_assets:files"
+					"concat:css_assets:files",
+					"shell:jekyll_serve"
 				],
 				options: {
-					spawn: false
+					spawn: false,
 				}
 			},
 			jekyll_assets: {
 				files: [
-					base_path + "/_includes/*.html",
-					base_path + "/_layouts/*.html",
-					base_path + "/_posts/*.md",
-					base_path + "/_config.dev.yml",
-					base_path + "/_config.yml",
-					base_path + "/index.html"
+					"_includes/*.html",
+					"_layouts/*.html",
+					"_posts/*.md",
+					"_config.dev.yml",
+					"_config.yml",
+					"index.html"
 				],
 				tasks: [
-					"shell:jekyll_serve"
+					"shell:jekyll_serve",
+					"watch"
 				],
 				options: {
+					spawn: false,
 					interrupt: true,
 					atBegin: true
 				}

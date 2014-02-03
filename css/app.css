@@ -3,5 +3,35 @@
 	-moz-tab-size: 2;
 }
 #content {
-	padding: 25px;
+	padding: 0 5px;
+}
+
+.indent {
+	margin-left: 25px;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	display: block;
+	margin: 0 auto;
+	font-size: 24px;
+	text-align: center;
+}
+
+.br {
+	height: 0.5em;
+}
+.br:after {
+	content: " ";
+}
+.demo {
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	color: #333333;
+	display: block;
+	font-size: 13px;
+	line-height: 1.42857;
+	margin: 0 0 10px;
+	padding: 9.5px;
 }
