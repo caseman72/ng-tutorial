@@ -5,19 +5,16 @@
 #content {
 	padding: 0 5px;
 }
-
 .indent {
 	margin-left: 25px;
 	margin-bottom: 0.75em;
 }
-
 h1 {
 	display: block;
 	margin: 0 auto;
 	font-size: 24px;
 	text-align: center;
 }
-
 .br {
 	height: 0.5em;
 }
